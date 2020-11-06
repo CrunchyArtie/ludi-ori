@@ -1,0 +1,5 @@
+<nav mat-tab-nav-bar backgroundColor="primary" color="accent">
+    <a mat-tab-link *ngFor="let link of patterns"
+       (click)="onTabSelected(link)"
+       [active]="active === link"> {{link}} </a>
+</nav>

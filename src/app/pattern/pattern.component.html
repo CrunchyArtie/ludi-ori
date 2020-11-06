@@ -1,0 +1,16 @@
+<mat-drawer-container autosize >
+    <mat-drawer mode="side" opened>
+        <div class="variables">
+            <mat-form-field *ngFor="let patternVar of pattern.variables">
+                <mat-label>{{patternVar.name}}</mat-label>
+                <input matInput type="number" [ngModel]="patternVar.value"
+                       (ngModelChange)="onValueChange(patternVar.name, $event)">
+            </mat-form-field>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <div class="canvas-wrapper">
+            <canvas #canvas width="1024" height="1024"></canvas>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

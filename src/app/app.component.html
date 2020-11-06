@@ -1,0 +1,12 @@
+<div class="main">
+    <app-toolbar></app-toolbar>
+
+    <app-pattern-selector [patterns]="patterns" [active]="activePattern" (patternSelected)="openPattern($event)">
+    </app-pattern-selector>
+
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+
+<app-footer></app-footer>
+</div>

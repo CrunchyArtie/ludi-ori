@@ -1,0 +1,32 @@
+
+mat-drawer .variables {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+mat-drawer-content {
+    max-width: 100vw; // <= try this
+    max-height: 80vh;
+    display: flex;
+
+    .canvas-wrapper {
+        //max-height: 256px;
+        //max-width:256px;
+        //overflow: hidden;
+        flex: 1;
+
+        canvas {
+        }
+    }
+}
+
+:host {
+    display: flex;
+    flex: 1 1;
+}
+
+mat-drawer-container {
+    flex: 1 1;
+}
